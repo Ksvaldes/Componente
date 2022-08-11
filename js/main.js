@@ -29,7 +29,7 @@ function Juego(){ //REPRESENTACIONES DE TAREJETAS
             imagenes.splice(0,1);
         }
     }
-    tarjetas.sort(() => Math.random() - 0.5)
+    tarjetas.sort(() => Math.random() - 0.5)// MOSTRAR TARJETAS EN DESORDEN
     tablero.innerHTML = tarjetas.join(" ")
 }
 //ROTACIONES DE TARJETAS
