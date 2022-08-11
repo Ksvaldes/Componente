@@ -1,5 +1,4 @@
-let root = document.querySelector("#root");
-
+console.log('inicia el juego');
 // BASE DE DATOS DE LAS TARJETAS
 let Naturaleza1 = ['🦋','🌸','🌻','🍄','🌼','🌵','🍀','🌴','🦔','🌹','🐝','🐞'];
 let Naturaleza2 = ['🦋','🌸','🌻','🍄','🌼','🌵','🍀','🌴','🦔','🌹','🐝','🐞'];
@@ -42,13 +41,13 @@ function seleccionarTarjeta(i){
         escogido.push(i)
      }
      if (escogido.length == 2){
-        noescogido(escogido)
+        no(escogido)
         escogido = []
      }
 }
 //AYUDA AL ANALISIS DE LAS CARTAS Y MOSTRAR SI SON O 
 //NO PAREJA CAMBIANDO EL COLOR DE FONDO
-function noescogido(escogido){
+function no(escogido){
     setTimeout(() => {
         let tarjetaUno = document.getElementById("tarjeta" + escogido[0])
         let tarjetaDos = document.getElementById("tarjeta" + escogido[1])
